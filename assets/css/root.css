@@ -1,0 +1,147 @@
+/**********
+ * IMPORT *
+ **********/
+
+@import url("/assets/css/fonts.css");
+
+/********
+ * ROOT *
+ ********/
+
+html,
+body {
+  height: 100%;
+}
+
+.root {
+  min-height: -webkit-fill-available;
+  font-family: Gotham Pro, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+  text-align: left;
+  background-color: #f2f2f2;
+
+  /* COLOR */
+  --font-gray: #646464;
+}
+
+.container {
+  width: min(100%, 1200px);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* BUTTON PALE YELLOW */
+.button-pale-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffecb4;
+  border: 1px solid #ffecb4;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-pale-yellow:hover {
+  color: #000;
+
+  background-color: unset;
+  border: 1px solid #ffecb4;
+}
+
+/* BUTTON PURPLE */
+.button-purple {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 500;
+  color: #5b57eb;
+
+  background-color: #5b57eb26;
+  border: 1px solid #5b57eb26;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-purple:hover {
+  background-color: unset;
+  border: 1px solid #5b57eb;
+}
+
+/* BUTTON YELLOW */
+.button-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  color: #fff;
+
+  background-color: #ffbe00;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-yellow:hover {
+  color: #00000080;
+
+  background-color: unset;
+  border: 1px solid #ffbe00;
+}
+
+/* BUTTON GRAY */
+.button-gray {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00000080;
+
+  background-color: unset;
+  border-radius: 5px;
+  border: 1px solid #00000080;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-gray:hover {
+  color: #fff;
+
+  background-color: #00000080;
+}
+
+/* A underline */
+.a-underline {
+  position: relative;
+
+  color: #000;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.a-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.a-underline:hover::after {
+  width: 100%;
+}

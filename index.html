@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <meta property="og:title" content="ЗаДеньги.рф" />
+    <meta property="og:description" content="Микрозайм организация" />
+  </head>
+  <body class="root">
+    <header class="header">
+      <div class="header-container container">
+        <div class="header-contact">
+          <p class="header-contact__phone">8 800 333 32 67</p>
+          <p class="header-contact__description">звонок бесплатный</p>
+        </div>
+        <div class="header-logo">
+          <img src="/assets/img/logo.png" alt="Логотип" />
+        </div>
+        <button class="header-logIn button-pale-yellow">Войти</button>
+      </div>
+    </header>
+    <section class="loans container">
+      <div class="loans-items">
+        <div class="loans-item">
+          <div class="loans-item__info">
+            <div class="loans-item__info-head">
+              <div class="loans-item__info-head__description">
+                <div class="loans-item__info-head__logo">
+                  <img src="assets/img/cards/visa.svg" alt="VISA" />
+                </div>
+                <div class="loans-item__info-head__title">
+                  <h2 class="loans-item__info-head__title-number">Заем <span>№123456</span> на <span>7000 ₽</span></h2>
+                  <p class="loans-item__info-head__title-card">Выдан на карту: <span>**** 5678</span></p>
+                </div>
+              </div>
+              <button class="loans-item__info-head__status button-purple">Активный</button>
+            </div>
+            <div class="loans-item__info-body">
+              <div class="loans-item__info-body__list">
+                <ul class="loans-item__info-body__list-keys">
+                  <li class="loans-item__info-body__list-key">Сумма займа:</li>
+                  <li class="loans-item__info-body__list-key">Дата выдачи:</li>
+                  <li class="loans-item__info-body__list-key">Ставка по займу:</li>
+                  <li class="loans-item__info-body__list-key">Активный:</li>
+                  <li class="loans-item__info-body__list-key">Начислено %:</li>
+                  <li class="loans-item__info-body__list-key">Оплачено:</li>
+                  <li class="loans-item__info-body__list-key">Долг на сегодня:</li>
+                </ul>
+                <ul class="loans-item__info-body__list-values">
+                  <li class="loans-item__info-body__list-value">12000 ₽</li>
+                  <li class="loans-item__info-body__list-value">15.11.2023</li>
+                  <li class="loans-item__info-body__list-value">0,8% в день</li>
+                  <li class="loans-item__info-body__list-value">10 дней</li>
+                  <li class="loans-item__info-body__list-value">960 ₽</li>
+                  <li class="loans-item__info-body__list-value">1000 ₽</li>
+                  <li class="loans-item__info-body__list-value">11000 ₽</li>
+                </ul>
+              </div>
+              <div class="loans-item__info-body__buttons">
+                <button class="button-yellow">Оплатить 11000 ₽</button>
+                <button class="button-gray">Продлить на 14 дней</button>
+                <button class="button-gray">Частичное погашение</button>
+              </div>
+            </div>
+          </div>
+          <div class="loans-item__history">
+            <div class="loans-item__history-head">
+              <h2 class="loans-item__history-head__title">История операция</h2>
+              <button id="loans-history-btn" class="loans-item__history-head__button">
+                <img src="/assets/img/arrows/gray.svg" alt="Кнопка" />
+              </button>
+            </div>
+            <div class="loans-item__history-body hidden">История операций</div>
+          </div>
+          <div class="loans-item__documents">
+            <div class="loans-item__documents-head">
+              <h2 class="loans-item__documents-head__title">Документы</h2>
+              <button id="loans-documents-btn" class="loans-item__documents-head__button">
+                <img src="/assets/img/arrows/gray.svg" alt="Кнопка" />
+              </button>
+            </div>
+            <div class="loans-item__documents-body hidden">Документы</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/scripts/loan-item-open.js" defer></script>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-faq">
+          <div class="footer-faq__logo">
+            <img src="/assets/img/logo.png" alt="Логотип" />
+          </div>
+          <div class="footer-faq__phone">
+            <p>8 800 200 34 85</p>
+            <p>8 800 333 32 67</p>
+            <p>звонок бесплатный</p>
+          </div>
+          <div class="footer-faq__time">
+            <p>Время работы:</p>
+            <p>понедельник - воскресеньес<br />9:00 до 21:00</p>
+          </div>
+          <div class="footer-faq__answer">
+            <a class="a-underline">Как погасить</a>
+            <a class="a-underline">Как получить</a>
+          </div>
+        </div>
+        <div class="footer-documents">
+          <div class="footer-documents__pdf">
+            <img src="/assets/img/footer-pdf.svg" alt="" />
+          </div>
+          <div class="footer-documents__items">
+            <div class="footer-documents__item">
+              <p>Правила предоставления микрозаймов</p>
+              <p>
+                Базовый стандарт защиты прав и<br />
+                интересов физических и юридических<br />
+                лиц - получателей финансовых услуг
+              </p>
+              <p>
+                Базовый стандарт совершения<br />
+                микрофинансовой организацией<br />
+                операций на финансовом рынке
+              </p>
+            </div>
+            <div class="footer-documents__item">
+              <p>
+                Информационная<br />
+                памятка Банка России о <br />
+                МФО
+              </p>
+              <p>Выписка из реестра МФО</p>
+              <p>
+                Информация для лиц,<br />
+                принимающих участие в<br />
+                СВО
+              </p>
+            </div>
+            <div class="footer-documents__item">
+              <p>
+                Политика безопасности <br />
+                платежей
+              </p>
+              <p>
+                Информация для<br />
+                получателя финансовой<br />
+                услуги
+              </p>
+              <p>Общие условия</p>
+            </div>
+            <div class="footer-documents__item">
+              <p>
+                Политика обработки<br />
+                персональных данных
+              </p>
+              <p>
+                Стандартная форма<br />
+                заявления в финансовую<br />
+                организацию в<br />
+                электронном
+              </p>
+              <p>Устав</p>
+            </div>
+            <div class="footer-documents__item">
+              <p>
+                Информация о службе<br />
+                финансового<br />
+                уполномоченного
+              </p>
+              <p>
+                Информация для лиц,<br />
+                оказавшихся в трудной<br />
+                жизненной ситуации
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <p>
+            Условия предоставления потребительского займа: сумма от 3 000 руб. до 25 000 руб., срок до 31 дня, ПСК 292
+            %, 0,8 % в день.<br />
+            Полное наименование: Общество с ограниченной ответственностью Микрокредитная компания "Финфокс7"Сокращенное
+            наименование: ООО МКК "Финфокс7"<br />
+            ИНН 6311196269 ОГРН 1236300017579<br />
+            Регистрационный номер записи в государственном реестре микрофинансовых организаций 2303336009990. Дата
+            внесения 2024-01-29<br />
+            Включено в реестр (является членом) саморегулируемой организации Союз микрофинансовых организаций «Альянс»
+            01.04.20 года № 1991<br />
+            Адрес ООО МКК "Финфокс7": 443093, г. Самара, УЛ. Мориса Тореза, д. 1А, офис 504<br />
+            Режим работы: понедельник-пятница с 9.00 до 18.00. Время работы обособленных подразделений необходимо
+            узнавать по телефону 88003333267 (звонок по России бесплатный)<br />
+            <br />
+            Сайт Банка России - https://www.cbr.ru<br />
+            Страница сайта Банка России, содержащая государственный реестр микрофинансовых организация -
+            https://www.cbr.ru/microfinance/registry/<br />
+            Интернет-приемная Банка России https://www.cbr.ru/reception/<br />
+            СРО «Альянс »: сайт - https://alliance-mfo.ru/ Юридический адрес: г. Москва Полесский проезд, 16, стр.1,
+            оф.308Финансовый уполномоченный: сайт - https://www finombudsman.ru, телефон 8 (800) 200 00 10 (звонок по
+            России бесплатный), адрес: 119017, г. Москва, Старомонетный пер, д. 3<br />
+            Потребитель финансовых услуг имеет право направить обращение финансовому уполномоченному. Порядок обращения
+            см. в Памятке "Информация о службе финансового уполномоченного".
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
